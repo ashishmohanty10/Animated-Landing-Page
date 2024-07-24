@@ -5,7 +5,7 @@ import AppleLogo from "/appleLogo.svg";
 export default function Header() {
   return (
     <>
-      <header className="bg-backgroundContrast  text-white  ">
+      <header className="text-white bg-backgroundContrast ">
         <Container className="flex items-center min-h-11">
           <a href="/" className="flex items-center p-6 -ml-6">
             <span className="sr-only">Back to homepage</span>
@@ -14,8 +14,8 @@ export default function Header() {
         </Container>
       </header>
 
-      <div className="sticky top-0 bg-backgroundContrast  text-white  ">
-        <Container className="flex items-center min-h-11 justify-between">
+      <div className="sticky top-0 text-white bg-backgroundContrast ">
+        <Container className="flex items-center justify-between min-h-11">
           <p className="text-xl font-semibold">Apple TV+</p>
           <Button size="small">Stream Now</Button>
         </Container>
