@@ -1,14 +1,13 @@
 import Container from "./components/container";
 import Header from "./components/header";
+import Hero from "./components/sections/hero";
 
 export default function App() {
   return (
     <>
       <Header />
       <main>
-        <div>
-          <Container>Hero Compoenents</Container>
-        </div>
+        <Hero />
         <div>
           <Container>usp's</Container>
         </div>
@@ -19,7 +18,6 @@ export default function App() {
           <Container>Carousal with Poster</Container>
         </div>
       </main>
-      ;
     </>
   );
 }
