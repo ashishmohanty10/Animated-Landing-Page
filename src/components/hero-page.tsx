@@ -12,7 +12,7 @@ const Hero = () => {
                 {idx === 1 && (
                   <div className="w-[8vw] h-[4.8vw] rounded-md bg-green-500"></div>
                 )}
-                <h1 className="uppercase text-8xl tracking-tighter font-medium text-white">
+                <h1 className="uppercase text-[5vw] leading-[5.7vw] tracking-tighter font-medium text-white">
                   {item}
                 </h1>
               </div>
@@ -21,7 +21,7 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex items-center justify-between  py-5 px-20 text-white">
+      <div className="border-t-[1px] border-zinc-800 mt-20 flex items-center justify-between  py-5 px-20 text-white">
         {[
           "For Public and Private companies",
           "From the first pitch to IPO",
