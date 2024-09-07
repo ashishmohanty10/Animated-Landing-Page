@@ -1,16 +1,27 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full h-screen bg-zinc-900 pt-1"
+    >
       <div className="mt-52 px-20">
         {["We Create", "Eye Opening", "Presentation"].map((item, idx) => {
           return (
             <div key={idx} className="masker">
               <div className="w-fit flex items-center">
                 {idx === 1 && (
-                  <div className="w-[8vw] h-[4.8vw] rounded-md bg-green-500"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.75, 0, 0.25, 1], duration: 1 }}
+                    className="w-[8vw] h-[4vw] rounded-md bg-green-500"
+                  ></motion.div>
                 )}
                 <h1 className="uppercase text-[5vw] leading-[5.7vw] tracking-tighter font-medium text-white">
                   {item}
